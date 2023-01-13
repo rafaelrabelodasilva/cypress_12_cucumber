@@ -135,5 +135,5 @@ Se você, como eu sempre utiliza o e2e e o Chrome para executar os testes basta 
 
 # Observações 💡
 
-* Pasta plugins:<br>
+Pasta plugins:<br>
 A partir do cypress 10 não existe mais a pasta plugins. Todos os plugins são colocados dentro do arquivo cypress.config.js
