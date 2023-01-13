@@ -125,7 +125,7 @@ Assumindo que você já tem a feature e o step podemos abrir o cypress e rodar o
 
 # Configurações adicionais ⚙️
 
-* Se você, como eu sempre utiliza o e2e e o Chrome para executar os testes basta colocar o script abaixo no arquivo package.json que irá pular essas etapas agilizando ainda mais o processo de testes:
+Se você, como eu sempre utiliza o e2e e o Chrome para executar os testes basta colocar o script abaixo no arquivo package.json que irá pular essas etapas agilizando ainda mais o processo de testes:
 ```
   "scripts": {
     "cypress:open": "cypress open --browser chrome --e2e"
@@ -135,5 +135,5 @@ Assumindo que você já tem a feature e o step podemos abrir o cypress e rodar o
 
 # Observações 💡
 
-* Pasta plugins<br>
+* Pasta plugins:<br>
 A partir do cypress 10 não existe mais a pasta plugins. Todos os plugins são colocados dentro do arquivo cypress.config.js
