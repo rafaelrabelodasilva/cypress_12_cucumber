@@ -1,8 +1,8 @@
-# Projeto
+# Projeto 📚
 
 Projeto automação de testes da aplicação web Publicazo usando Cypress e Cucumber. Neste projeto foi utilizado o cucumber para descrever os casos de teste em BDD que vão ser lidos pelo cypress através do empacotador Esbuild.
 
-# Dependências
+# Dependências 💾
 
 Foi utilizado:
 * Cypress 12
@@ -13,7 +13,7 @@ Para instalar as dependências deste projeto basta digitar o comando abaixo no t
 
 `$ npm intall`
 
-# Passos para iniciar um projeto com Cypress 12 e Cucumber
+# Passos para iniciar um projeto com Cypress 12 e Cucumber ✍
 
 Passo 1: iniciar um projeto NodeJs<br>
 `$ npm init`
@@ -123,7 +123,7 @@ Assumindo que você já tem a feature e o step podemos abrir o cypress e rodar o
 
 ![gif](./imagens/exibindo-projeto.gif "Exibindo projeto")
 
-# Configurações adicionais
+# Configurações adicionais ⚙️
 
 * Se você, como eu sempre utiliza o e2e e o Chrome para executar os testes basta colocar o script abaixo no arquivo package.json que irá pular essas etapas agilizando ainda mais o processo de testes:
 ```
@@ -133,7 +133,7 @@ Assumindo que você já tem a feature e o step podemos abrir o cypress e rodar o
 ```
 ![img](./imagens/script_cypress_open.png)
 
-# Observações
+# Observações 💡
 
 * Pasta plugins<br>
 A partir do cypress 10 não existe mais a pasta plugins. Todos os plugins são colocados dentro do arquivo cypress.config.js
