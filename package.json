@@ -1,0 +1,17 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Cypress + Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open --browser chrome --e2e"
+  },
+  "author": "Rafael Rabelo da Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^12.3.0",
+    "esbuild": "^0.16.17"
+  }
+}
