@@ -7,7 +7,8 @@ Projeto automação de testes da aplicação web Publicazo usando Cypress e Cucu
 Foi utilizado:
 * Cypress 12
 * Cucumber
-* Esbuild
+* Esbuild (empacotador)
+* Faker-br (gera dados aleatóriamente)
 
 Para instalar as dependências deste projeto basta digitar o comando abaixo no terminal:
 
@@ -116,7 +117,15 @@ Dentro do arquivo .js da pasta step_definitions devemos colocar o import:
 
 ![img](./imagens/print_import_js.png "Exibindo o import do arquivo .js")
 
-* Passo 9: rodar os testes<br>
+* Passo 9: instalar a biblioteca faker-br<br>
+Esta é uma biblioteca que gera dados aleatórios para os testes. 
+
+`$ npm i faker-br`
+
+Para mais informações: <a href='https://www.npmjs.com/package/faker-br'>faker-br</a>
+<a href='https://blog.matheuscastiglioni.com.br/mockando-dados-com-fakerjs/'>Como mokar dados com o faker</a>
+
+* Passo 10: rodar os testes<br>
 Assumindo que você já tem a feature e o step podemos abrir o cypress e rodar os testes:
 
 `$ npx cypress open`

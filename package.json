@@ -13,5 +13,8 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "cypress": "^12.3.0",
     "esbuild": "^0.16.17"
+  },
+  "dependencies": {
+    "faker-br": "^0.4.1"
   }
 }

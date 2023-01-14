@@ -1,5 +1,7 @@
 import {Given, When, Then} from "@badeball/cypress-cucumber-preprocessor";
 
+var faker = require('faker-br');
+
 Given('que acesso a página de cadastro do site Publicazo', () => {
     cy.intercept('GET', 'http://publicazo.insprak.com/').as('paginaInicial')
     cy.visit('/')
@@ -17,8 +19,8 @@ Then('devo ver a mensagem {string}', (mensagem) => {
 })
 
 When('submeto o formulário de cadastro com dados válidos', () => {
-    cy.get('#user_fullname').type(Cypress.env('nomeCompleto'))
-    cy.get('#user_email').type(Cypress.env('email'))
+    cy.get('#user_fullname').type(faker.name.findName())
+    cy.get('#user_email').type(faker.internet.email())
     cy.get('#user_password').type(Cypress.env('senha'))
     cy.get('#user_password_confirmation').type(Cypress.env('senha'))
     cy.get('.btn').click()
@@ -33,9 +35,9 @@ Then('devo ver as mensagens {string}, {string} e {string}', (mensagem1, mensagem
 })
 
 When('submeto o formulário com senhas divergentes', () => {
-    cy.get('#user_fullname').type(Cypress.env('nomeCompleto'))
-    cy.get('#user_email').type(Cypress.env('email'))
-    cy.get('#user_password').type(Cypress.env('senha'))
-    cy.get('#user_password_confirmation').type(Cypress.env('senhaDiferente'))
+    cy.get('#user_fullname').type(faker.name.findName())
+    cy.get('#user_email').type(faker.internet.email())
+    cy.get('#user_password').type(faker.internet.password())
+    cy.get('#user_password_confirmation').type(faker.internet.password())
     cy.get('.btn').click()
 })
