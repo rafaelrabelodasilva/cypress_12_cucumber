@@ -1,6 +1,6 @@
 # Projeto 📚
 
-Projeto automação de testes da aplicação web Publicazo usando Cypress e Cucumber. Neste projeto foi utilizado o cucumber para descrever os casos de teste em BDD que vão ser lidos pelo cypress através do empacotador Esbuild.
+Projeto automação de testes da aplicação web Publicazo usando Cypress 12 e Cucumber. Neste projeto foi utilizado o cucumber para descrever os casos de teste em BDD que vão ser lidos pelo cypress através do empacotador Esbuild.
 
 # Dependências 💾
 
