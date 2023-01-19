@@ -60,3 +60,11 @@ When('submeto o formulário com senhas divergentes', () => {
     cy.get('#user_password_confirmation').type(faker.internet.password())
     cy.get('.btn').click()
 })
+
+// When('submeto o formulário com um e-mail inválido', () => {
+//     cy.get('#user_fullname').type(faker.name.findName())
+//     cy.get('#user_email').type(Cypress.env('emailInvalido'))
+//     cy.get('#user_password').type(faker.internet.password())
+//     cy.get('#user_password_confirmation').type(faker.internet.password())
+//     cy.get('.btn').click()
+// })

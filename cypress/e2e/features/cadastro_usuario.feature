@@ -1,4 +1,4 @@
-Feature: Cadastro de usuário
+Feature: cadastro de usuário
 
     Este caso de uso permite que novos usuários possam se cadastrar no sistema para realizar operações de forma autenticada.
 
@@ -17,6 +17,6 @@ Feature: Cadastro de usuário
         When submeto o formulário com senhas divergentes
         Then devo ver a mensagem "Password confirmation não é igual a Password"
 
-    # Scenario: submeter formulário com e-mail inválido (não realizado)
+    # Scenario: submeter formulário com e-mail inválido
     #     When submeto o formulário com um e-mail inválido
     #     Then devo ver a mensagem ""
