@@ -23,10 +23,6 @@ Given('que acesso a página de cadastro do site Publicazo', () => {
     cy.get('h2').should('have.text', 'Cadastre-se')
 })
 
-Then('devo ver a mensagem {string}', (mensagem) => {
-    cy.verificaMensagem(mensagem)
-})
-
 When('submeto o formulário de cadastro com dados válidos', () => {
     cy.get('#user_fullname')
     .type(faker.name.findName())
@@ -40,6 +36,10 @@ When('submeto o formulário de cadastro com dados válidos', () => {
     cy.get('#user_password_confirmation')
     .type(Cypress.env('senha'))
     cy.get('.btn').click()
+})
+
+Then('devo ver a mensagem {string}', (mensagem) => {
+    cy.verificaMensagem(mensagem)
 })
 
 When('não preencho nenhum campo', () => {

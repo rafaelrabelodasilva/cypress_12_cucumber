@@ -9,15 +9,13 @@ Este caso de uso permite que usuários cadastrados possam se autenticar no siste
         When submeto o formulário com dados válidos
         Then devo ver a mensagem "Logado com sucesso."
 
-    Scenario: usuário solicita alteração de senha com e-mail não cadastrado
-        When clico no botão "Esqueceu a Senha?"
-        And submeto solicitação com e-mail sem cadastro
+    Scenario: usuário solicita recuperação de senha com e-mail não cadastrado
+        When submeto recuperação de senha com e-mail não cadastrado
         Then devo ver a mensagem "Email não encontrado"
 
-    # Scenario: usuário solicita alteração de senha com e-mail cadastrado
-    #     When clico no botão "Esqueceu a Senha?"
-    #     And submeto solicitação com e-mail cadastrado
-    #     Then devo ver a mensagem ""
+    Scenario: usuário solicita alteração de senha com e-mail cadastrado
+        When submeto recuperação de senha com e-mail cadastrado
+        Then devo ver a mensagem de erro "SMTP From address may not be blank: nil"
 
     Scenario: submeter formulário sem dados
         When submete formulário sem dados
